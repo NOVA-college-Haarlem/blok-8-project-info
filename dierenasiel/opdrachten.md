@@ -70,6 +70,7 @@ Daarnaast:
 
 ## Opdracht 3 - Models maken
 
-1. Maak via de `php artisan` commando de models aan. Deze zijn altijd in enkelvoud en in het Engels.
-
-2. Laat je models door de docent goedkeuren.
+1. Open je project in VSCode
+2. Open een terminal in VSCode
+3. Maak via de `php artisan` commando de models aan. Deze zijn altijd in enkelvoud en in het Engels.
+4. Laat je models door de docent goedkeuren.
