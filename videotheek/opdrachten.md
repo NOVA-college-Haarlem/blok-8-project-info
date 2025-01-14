@@ -91,3 +91,39 @@ Daarnaast:
 
 2. Laat je models door de docent goedkeuren.
 
+
+## Opdracht 5 - Database connectie
+
+1. Druk op Ctrl + P
+2. Open .env file
+3. Gebruik je liever mysql en phpmyadmin. Vul de correcte database connectie in. Zie regel 24 tm 29
+> DB_CONNECTION=mysql
+> DB_HOST=127.0.0.1
+> DB_PORT=3307
+> DB_DATABASE=videotheek
+> DB_USERNAME=root
+> DB_PASSWORD=password
+
+## Opdracht 5 - Migrations maken
+
+1. Maak via de `php artisan` commando de migrations aan. 
+2. Zorg ervoor dat je alle attributen uit je database ontwerp hebt meegenomen.
+3. Controleer of de migrations zijn aangemaakt.
+4. Laat je migrations door de docent goedkeuren.
+
+## Opdracht 6 - Seeding
+
+1. Maak via de `php artisan` commando de seeders aan. Deze zijn altijd in enkelvoud en in het Engels.
+2. Zorg ervoor dat alle niet-verplichte kolommen zijn voorzien van een default waarde of een nullable waarde.
+3. Probeer de database te seeden.
+4. Laat je seeders door de docent goedkeuren.
+
+## Opdracht 7 - Userstories maken
+
+De volgende dien je te maken:
+
+- [ ] films kunnen toevoegen zodat nieuwe aanwinsten in het systeem staan
+- [ ] films kunnen bewerken zodat informatie up-to-date blijft
+- [ ] de voorraad van films kunnen bijhouden zodat ik weet wanneer bij te bestellen (deze dien je te bevragen bij de docent)
+- [ ] kunnen zien welke films onder het minimum voorraadniveau komen (deze dien je te bevragen bij de docent)
+- [ ] films kunnen verwijderen als ze uit de collectie gaan (deze  dien je te bevragen bij de docent)

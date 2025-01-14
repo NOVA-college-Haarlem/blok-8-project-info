@@ -97,5 +97,42 @@ Relaties:
 
 2. Laat je models door de docent goedkeuren.1
 
+## Opdracht 5 - Database connectie
+
+1. Druk op Ctrl + P
+2. Open .env file
+3. Gebruik je liever mysql en phpmyadmin. Vul de correcte database connectie in. Zie regel 24 tm 29
+> DB_CONNECTION=mysql
+> DB_HOST=127.0.0.1
+> DB_PORT=3307
+> DB_DATABASE=kinderopvang
+> DB_USERNAME=root
+> DB_PASSWORD=password
+
+## Opdracht 5 - Migrations maken
+
+1. Maak via de `php artisan` commando de migrations aan. 
+2. Zorg ervoor dat je alle attributen uit je database ontwerp hebt meegenomen.
+3. Controleer of de migrations zijn aangemaakt.
+4. Laat je migrations door de docent goedkeuren.
+
+## Opdracht 6 - Seeding
+
+1. Maak via de `php artisan` commando de seeders aan. Deze zijn altijd in enkelvoud en in het Engels.
+2. Zorg ervoor dat alle niet-verplichte kolommen zijn voorzien van een default waarde of een nullable waarde.
+3. Probeer de database te seeden.
+4. Laat je seeders door de docent goedkeuren.
+
+## Opdracht 7 - Userstories maken
+
+De volgende dien je te maken:
+
+- [ ] nieuwe kinderen kunnen toevoegen aan het systeem zodat we hun informatie kunnen bijhouden
+- [ ] kindergegevens kunnen bewerken om informatie actueel te houden
+- [ ] basisinformatie van kinderen kunnen registreren (naam, leeftijd, geslacht)
+- [ ] een overzicht kunnen zien van alle kinderen in de opvang
+- [ ] kinderen kunnen verwijderen uit het systeem wanneer ze uitgeschreven zijn (deze laatste dien je te bevragen bij de docent)
+
+
 
 
