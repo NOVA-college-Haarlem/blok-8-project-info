@@ -2,71 +2,75 @@
 
 ## Opdracht 1 - Database ontwerp
 
-1. Maak een database ontwerp voor het dierenasiel.
+1. Maak een database ontwerp voor de kinderopvang.
 2. Laat je database ontwerp door de docent goedkeuren.
 
 ### Specifieke Eisen
 
-#### Dier
+### Films
+
+Eigenschappen:
+- Titel
+- Regisseur
+- Genre
+- Jaar
+- Duur
+- Uitgever
+
+Daarnaast:
+- Een film kan meerdere regisseurs hebben.
+- Een film heeft één productiehuis
+- Een film hoort bij één hoofdgenre (bijv. 'Documentaire', 'Thriller', 'Actie')
+- Een film kan in meerdere subgenres vallen (bijv. 'Science Fiction', 'Mysterie')
+
+
+#### Regisseurs
 
 Eigenschappen:
 - Naam
-- Soort
-- Ras
-- Leeftijd
-- Geslacht
-- Medische geschiedenis
+- Geboortedatum
 
 Daarnaast:
-- Kan geadopteerd worden door een aanvrager
-- Heeft een voedingsschema
-- Heeft nul of meerdere medische behandelingen
-- Hoort bij een categorie
+- Een regisseur kan meerdere films hebben geregisseerd
 
-
-#### Adoptie
-
-Eigenschappen:
-- Aanvrager 
-- Contactinformatie
-- Datum van aanvraag
-- Status van de aanvraag
-
-Daarnaast:
-- Een dier kan meerdere adopties hebben
-- Een aanvrager kan meerdere adopties hebben
-- Een adoptie verbindt een dier met een aanvrager
-
-#### Medische Behandeling
-
-Eigenschappen:
-- Datum
-- Type
-- Beschrijving
-
-Daarnaast:
-- Een dier kan meerdere medische behandelingen hebben
-- Een medische behandeling kan bij meerdere dier plaatsvinden
-
-#### Voederschema
+#### Productiehuizen
 
 Eigenschappen:
 - Naam
-- Beschrijving
-- Voedingsstoffen
+- Contactpersoon
+- Email
+- Telefoonnummer
+- Levertijd in dagen
 
 Daarnaast:
-- Een dier heeft een voederschema
+- Een productiehuis kan meerdere films produceren
+
+#### Genres
+
+Eigenschappen:
+- Naam
+
+Daarnaast:
+- Een genre kan meerdere films hebben
+
+#### Subgenres
+
+Eigenschappen:
+- Naam
+- Hoort bij een hoofdgenre
+
+Daarnaast:
+- Een subgenre kan meerdere films hebben
 
 ## Opdracht 2 - Laravel Project beginnen
 
 1. Start een nieuw Laravel project in Laravel Herd.
 2. Kies voor het gebruik van Laravel Breeze voor authenticatie
-3. Noem het project "dierenasiel"
+3. Noem het project "videostore"
 4. Kies Blade voor de frontend
 5. Testing Framework: PHPUnit
 6. Target location: _hoef je niet te kiezen_
-7. ga naar http://dierenasiel.test om je site te bezoeken
+7. ga naar http://videostore.test
 
 ## Opdracht 3 - Database Docker omgeving
 
@@ -83,7 +87,7 @@ Daarnaast:
 
 ## Opdracht 4 - Models maken
 
-1. Open je project in VSCode
-2. Open een terminal in VSCode
-3. Maak via de `php artisan` commando de models aan. Deze zijn altijd in enkelvoud en in het Engels.
-4. Laat je models door de docent goedkeuren.
+1. Maak via de `php artisan` commando de models aan. Deze zijn altijd in enkelvoud en in het Engels.
+
+2. Laat je models door de docent goedkeuren.
+

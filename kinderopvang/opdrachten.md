@@ -2,40 +2,50 @@
 
 ## Opdracht 1 - Database ontwerp
 
-1. Maak een database ontwerp voor het dierenasiel.
+1. Maak een database ontwerp voor de kinderopvang.
 2. Laat je database ontwerp door de docent goedkeuren.
 
 ### Specifieke Eisen
 
-#### Dier
+#### Kind
 
 Eigenschappen:
 - Naam
-- Soort
-- Ras
 - Leeftijd
 - Geslacht
 - Medische geschiedenis
+- Dieetbehoeften
 
-Daarnaast:
-- Kan geadopteerd worden door een aanvrager
-- Heeft een voedingsschema
+Relaties:
+- Kan een dieetbehoefte hebben
 - Heeft nul of meerdere medische behandelingen
-- Hoort bij een categorie
+- Hoort bij een of meerdere ouders
 
-
-#### Adoptie
+#### Inschrijving
 
 Eigenschappen:
-- Aanvrager 
-- Contactinformatie
-- Datum van aanvraag
-- Status van de aanvraag
+- Datum
+- Status
+- Kind
+- Ouder
 
-Daarnaast:
-- Een dier kan meerdere adopties hebben
-- Een aanvrager kan meerdere adopties hebben
-- Een adoptie verbindt een dier met een aanvrager
+Relaties:
+- Een kind kan een inschrijving hebben
+- Een ouder kan meerdere inschrijvingen doen
+  
+#### Ouder
+
+Eigenschappen:
+- Naam
+- Contactinformatie
+- Adres
+- E-mail
+- Telefoonnummer
+- Kinderen
+
+Relaties:
+- Een ouder kan meerdere kinderen hebben
+- Een inschrijving verbindt een kind met een ouder
 
 #### Medische Behandeling
 
@@ -44,29 +54,29 @@ Eigenschappen:
 - Type
 - Beschrijving
 
-Daarnaast:
-- Een dier kan meerdere medische behandelingen hebben
-- Een medische behandeling kan bij meerdere dier plaatsvinden
+Relaties:
+- Een kind kan meerdere medische behandelingen hebben
+- Een medische behandeling kan bij meerdere kinderen plaatsvinden
 
-#### Voederschema
+### Dieetbehoefte
 
 Eigenschappen:
 - Naam
 - Beschrijving
 - Voedingsstoffen
 
-Daarnaast:
-- Een dier heeft een voederschema
+Relaties:
+- Een kind heeft een dieetbehoefte
 
 ## Opdracht 2 - Laravel Project beginnen
 
 1. Start een nieuw Laravel project in Laravel Herd.
 2. Kies voor het gebruik van Laravel Breeze voor authenticatie
-3. Noem het project "dierenasiel"
+3. Noem het project "kinderopvang"
 4. Kies Blade voor de frontend
 5. Testing Framework: PHPUnit
 6. Target location: _hoef je niet te kiezen_
-7. ga naar http://dierenasiel.test om je site te bezoeken
+7. ga naar http://kinderopvang.test
 
 ## Opdracht 3 - Database Docker omgeving
 
@@ -83,7 +93,9 @@ Daarnaast:
 
 ## Opdracht 4 - Models maken
 
-1. Open je project in VSCode
-2. Open een terminal in VSCode
-3. Maak via de `php artisan` commando de models aan. Deze zijn altijd in enkelvoud en in het Engels.
-4. Laat je models door de docent goedkeuren.
+1. Maak via de `php artisan` commando de models aan. Deze zijn altijd in enkelvoud en in het Engels.
+
+2. Laat je models door de docent goedkeuren.1
+
+
+
